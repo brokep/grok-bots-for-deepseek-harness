@@ -90,11 +90,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/account-book"
      },
      "engines": {
@@ -138,11 +138,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/account-research"
      },
      "engines": {
@@ -185,11 +185,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/ai-search-visibility"
      },
      "engines": {
@@ -225,11 +225,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/alfred"
      },
      "engines": {
@@ -273,11 +273,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/apple-search-ads-review"
      },
      "engines": {
@@ -318,11 +318,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/best-video-editor"
      },
      "engines": {
@@ -371,11 +371,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/call-follow-ups"
      },
      "engines": {
@@ -411,11 +411,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/chief-health"
      },
      "engines": {
@@ -456,11 +456,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/clip-bot"
      },
      "engines": {
@@ -498,11 +498,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/company-docs-q-a"
      },
      "engines": {
@@ -542,11 +542,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/competitor-watching"
      },
      "engines": {
@@ -584,11 +584,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/cooper"
      },
      "engines": {
@@ -624,11 +624,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/credit-card-max"
      },
      "engines": {
@@ -669,11 +669,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/critiquito"
      },
      "engines": {
@@ -713,11 +713,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/customer-call-coach"
      },
      "engines": {
@@ -756,11 +756,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/customer-question-drafter"
      },
      "engines": {
@@ -804,11 +804,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/customer-stories"
      },
      "engines": {
@@ -847,11 +847,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/dan-lanning"
      },
      "engines": {
@@ -887,11 +887,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/deal-hunting"
      },
      "engines": {
@@ -937,11 +937,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/deal-qualification"
      },
      "engines": {
@@ -976,11 +976,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/dial-bot"
      },
      "engines": {
@@ -1019,11 +1019,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/distro-bot"
      },
      "engines": {
@@ -1061,11 +1061,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/dr-eggbot-v2"
      },
      "engines": {
@@ -1109,11 +1109,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/ebr-value-deck-builder"
      },
      "engines": {
@@ -1159,11 +1159,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/echo"
      },
      "engines": {
@@ -1200,11 +1200,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/engineer-bot"
      },
      "engines": {
@@ -1239,11 +1239,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/engineering-lead"
      },
      "engines": {
@@ -1287,11 +1287,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/event-producer"
      },
      "engines": {
@@ -1337,11 +1337,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/event-request-desk"
      },
      "engines": {
@@ -1382,11 +1382,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/figma-bro"
      },
      "engines": {
@@ -1421,11 +1421,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/flora"
      },
      "engines": {
@@ -1469,11 +1469,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/follow-through-agent"
      },
      "engines": {
@@ -1515,11 +1515,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/frank"
      },
      "engines": {
@@ -1565,11 +1565,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/fuse"
      },
      "engines": {
@@ -1613,11 +1613,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/haggle-bot"
      },
      "engines": {
@@ -1658,11 +1658,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/hiring-activity-monitor"
      },
      "engines": {
@@ -1697,11 +1697,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/home-robots"
      },
      "engines": {
@@ -1743,11 +1743,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/human-copywriter"
      },
      "engines": {
@@ -1788,11 +1788,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/image-gen-bot"
      },
      "engines": {
@@ -1827,11 +1827,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/imogen"
      },
      "engines": {
@@ -1866,11 +1866,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/import-bot"
      },
      "engines": {
@@ -1905,11 +1905,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/last30days"
      },
      "engines": {
@@ -1954,11 +1954,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/leadsworth"
      },
      "engines": {
@@ -1996,11 +1996,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/love"
      },
      "engines": {
@@ -2037,11 +2037,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/luma-pages"
      },
      "engines": {
@@ -2082,11 +2082,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/market-researcher"
      },
      "engines": {
@@ -2127,11 +2127,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/marketing-analyst"
      },
      "engines": {
@@ -2173,11 +2173,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/marketing-project-manager"
      },
      "engines": {
@@ -2223,11 +2223,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/mr-toms"
      },
      "engines": {
@@ -2263,11 +2263,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/nightly-audit-engineer"
      },
      "engines": {
@@ -2302,11 +2302,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/nyc-parent"
      },
      "engines": {
@@ -2349,11 +2349,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/office-ops-desk"
      },
      "engines": {
@@ -2392,11 +2392,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/overheard"
      },
      "engines": {
@@ -2436,11 +2436,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/performance-marketer"
      },
      "engines": {
@@ -2477,11 +2477,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/pfp-bot"
      },
      "engines": {
@@ -2525,11 +2525,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/pg"
      },
      "engines": {
@@ -2572,11 +2572,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/pipeline-health-and-forecast"
      },
      "engines": {
@@ -2611,11 +2611,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/pitch-deck-coach"
      },
      "engines": {
@@ -2651,11 +2651,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/pm-bot"
      },
      "engines": {
@@ -2690,11 +2690,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/product-idea-stress-test"
      },
      "engines": {
@@ -2735,11 +2735,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/product-marketer"
      },
      "engines": {
@@ -2777,11 +2777,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/projects-manager"
      },
      "engines": {
@@ -2822,11 +2822,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/prospector"
      },
      "engines": {
@@ -2866,11 +2866,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/proto-bot"
      },
      "engines": {
@@ -2908,11 +2908,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/qa-bot"
      },
      "engines": {
@@ -2947,11 +2947,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/researchy"
      },
      "engines": {
@@ -2992,11 +2992,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/sable-game-art"
      },
      "engines": {
@@ -3038,11 +3038,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/sales-call-coach"
      },
      "engines": {
@@ -3077,11 +3077,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/seed-a91e4c"
      },
      "engines": {
@@ -3124,11 +3124,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/sell-bot"
      },
      "engines": {
@@ -3171,11 +3171,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/seo-aeo-desk"
      },
      "engines": {
@@ -3217,11 +3217,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/sequencer"
      },
      "engines": {
@@ -3265,11 +3265,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/sherlock"
      },
      "engines": {
@@ -3315,11 +3315,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/signal-prospector"
      },
      "engines": {
@@ -3355,11 +3355,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/site-audit"
      },
      "engines": {
@@ -3394,11 +3394,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/skippy"
      },
      "engines": {
@@ -3441,11 +3441,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/stalk-bot"
      },
      "engines": {
@@ -3485,11 +3485,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/startup-qa-bot"
      },
      "engines": {
@@ -3533,11 +3533,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/tally"
      },
      "engines": {
@@ -3575,11 +3575,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/tech-demos"
      },
      "engines": {
@@ -3614,11 +3614,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/the-morning-newspaper"
      },
      "engines": {
@@ -3655,11 +3655,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/tinkabot"
      },
      "engines": {
@@ -3699,11 +3699,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/tradbot-2"
      },
      "engines": {
@@ -3741,11 +3741,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/video-editor"
      },
      "engines": {
@@ -3788,11 +3788,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/warm-intro-finder"
      },
      "engines": {
@@ -3830,11 +3830,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/webby"
      },
      "engines": {
@@ -3875,11 +3875,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/website-ops"
      },
      "engines": {
@@ -3914,11 +3914,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/writing-bot"
      },
      "engines": {
@@ -3959,11 +3959,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/wtd"
      },
      "engines": {
@@ -4004,11 +4004,11 @@
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1792078026,
+     "publishTimestamp": 1792078079,
      "source": {
       "type": "git",
       "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "ea8e4549b3232ca027428080961ff14957d7cd16",
       "path": "bots/x-brief"
      },
      "engines": {

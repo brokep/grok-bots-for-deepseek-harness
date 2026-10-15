@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-credit-card-max",
+  "version": "0.1.0",
+  "description": "Credit card maxing with live Grok Finance (Plaid): which card to swipe given your priorities (points, cash back, airline/hotel status), statement-credit tracking with muteable expiry nags, wrong-card recurring flags, and a monthly points-and-perks rollup — not budgeting.",
+  "author": "Trevin Chow",
+  "homepage": "https://x.ai/bot/marketplace/bots/credit-card-max",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/credit-card-max"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "personal"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

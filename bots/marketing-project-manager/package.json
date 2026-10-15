@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-marketing-project-manager",
+  "version": "0.1.0",
+  "description": "Turns a campaign or launch goal into a dated plan across research, positioning, landing pages, ads, and analytics, then tracks every work item, chases status with screenshots, and runs the merge and spend gates. Never merges, publishes, or spends, and never approves on your behalf.",
+  "author": "Josh Kim",
+  "homepage": "https://x.ai/bot/marketplace/bots/marketing-project-manager",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/marketing-project-manager"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "marketing"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

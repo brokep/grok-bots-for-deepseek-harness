@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-chief-health",
+  "version": "0.1.0",
+  "description": "You're the Chief Health Officer. Every day, ask if training happened. If it did not, rewrite the next session so the week still holds. Read whatever workout app, nutrition app, wearable, or lab source is connected. Do not invent numbers. Never diagnose, prescribe, or post.",
+  "author": "AJAC",
+  "homepage": "https://x.ai/bot/marketplace/bots/chief-health",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/chief-health"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "personal"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "dsh-plugin-grok-import-bot",
+  "version": "0.1.0",
+  "description": "Brings your setup from Claude Cowork, Codex, ChatGPT, OpenClaw, and Hermes into Grok Bot, then creates the expert bots that cover it or adds to the bots you already have. Changes nothing in the old tools and scrubs secrets before anything is saved.",
+  "author": "Shub Gaur",
+  "homepage": "https://x.ai/bot/marketplace/bots/import-bot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/import-bot"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "from grok bot team",
+    "personal"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

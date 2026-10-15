@@ -1,0 +1,36 @@
+{
+  "name": "dsh-plugin-grok-ebr-value-deck-builder",
+  "version": "0.1.0",
+  "description": "Builds an executive business review or value deck for a named account from your CRM, call history, and usage data, on your brand, and hands you an editable file. Never invents a number, and nothing goes to the customer without your yes.",
+  "author": "Krista Letz",
+  "homepage": "https://x.ai/bot/marketplace/bots/ebr-value-deck-builder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/ebr-value-deck-builder"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "from grok bot team",
+    "sales"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-marketing-analyst",
+  "version": "0.1.0",
+  "description": "Turns your ad platform exports into weekly and monthly paid media reports with commentary, answers reporting asks with the real number and its source, and watches spend against the thresholds you set. Never touches a campaign, never changes a budget, and never sends without your yes.",
+  "author": "Josh Kim",
+  "homepage": "https://x.ai/bot/marketplace/bots/marketing-analyst",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/marketing-analyst"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "marketing"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

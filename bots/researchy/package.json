@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-researchy",
+  "version": "0.1.0",
+  "description": "A research and fact-check desk that runs every pass on the latest Grok model with live web search. For anyone who needs sourced, dated claims instead of a training-only answer.",
+  "author": "Farzad",
+  "homepage": "https://x.ai/bot/marketplace/bots/researchy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/researchy"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "engineering"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

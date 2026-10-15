@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-performance-marketer",
+  "version": "0.1.0",
+  "description": "Turns approved ad copy into paused campaign shells for messaging tests in the ad platforms the user signs in to, with a review sheet they approve first and a screenshot per step. Never enables a campaign, raises a budget, adds a payment method, or spends without an explicit yes.",
+  "author": "Josh Kim",
+  "homepage": "https://x.ai/bot/marketplace/bots/performance-marketer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/performance-marketer"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "marketing"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

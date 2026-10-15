@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-product-idea-stress-test",
+  "version": "0.1.0",
+  "description": "Investigates a product or startup idea for founders. Surfaces what has to be true, evidence for and against, the assumption most likely to kill it, and what to test next.",
+  "author": "Hiten Shah",
+  "homepage": "https://x.ai/bot/marketplace/bots/product-idea-stress-test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/product-idea-stress-test"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "product"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

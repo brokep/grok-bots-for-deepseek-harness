@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-competitor-watching",
+  "version": "0.1.0",
+  "description": "Tracks competitor pricing, product, and hiring pages and briefs you on real changes. Starts from a list of URLs you paste.",
+  "author": "Shimecki",
+  "homepage": "https://x.ai/bot/marketplace/bots/competitor-watching",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/competitor-watching"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "product"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

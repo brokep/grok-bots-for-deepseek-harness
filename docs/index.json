@@ -1,0 +1,4021 @@
+{
+ "format": 1,
+ "title": "Grok Bots for DeepSeek Harness",
+ "description": "90 agent presets converted from the Grok Bot marketplace, each with its skills.",
+ "metadata": {
+  "categories": {
+   "from-grok-bot-team": {
+    "title": "From Grok Bot Team"
+   },
+   "sales": {
+    "title": "Sales"
+   },
+   "marketing": {
+    "title": "Marketing"
+   },
+   "operations": {
+    "title": "Operations"
+   },
+   "personal": {
+    "title": "Personal"
+   },
+   "product": {
+    "title": "Product"
+   },
+   "design": {
+    "title": "Design"
+   },
+   "engineering": {
+    "title": "Engineering"
+   },
+   "recruiting-people": {
+    "title": "Recruiting & People"
+   },
+   "other": {
+    "title": "Other"
+   }
+  },
+  "labels": {
+   "grok-bot": {
+    "title": "Grok Bot"
+   },
+   "has-routines": {
+    "title": "Has routines"
+   }
+  },
+  "sortKeys": {
+   "skills": {
+    "title": "Skills",
+    "order": "desc"
+   }
+  }
+ },
+ "plugins": [
+  {
+   "name": "dsh-plugin-grok-account-book",
+   "title": "Account Research Desk",
+   "description": "Researches the companies you sell to and writes your pre-call brief and account plan. Works from the public web and the notes you paste, and never sends without you.",
+   "author": "Anoop Baliga",
+   "homepage": "https://x.ai/bot/marketplace/bots/account-book",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/account-book"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "hex",
+     "Databricks SQL",
+     "Gmail",
+     "Google Calendar",
+     "Granola",
+     "Google Drive",
+     "Google Sheets",
+     "Salesforce"
+    ],
+    "sortKeys": {
+     "skills": 11
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/account-book"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-account-research",
+   "title": "GTM Account Research",
+   "description": "Researches one account before a meeting, deal review, or account plan. Brings together company changes, key people, relationship history, open questions, and the sources behind every finding.",
+   "author": "Stefan Markarian",
+   "homepage": "https://x.ai/bot/marketplace/bots/account-research",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/account-research"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Salesforce",
+     "Gmail",
+     "Google Calendar",
+     "Slack",
+     "Notion",
+     "Google Sheets",
+     "Granola"
+    ],
+    "sortKeys": {
+     "skills": 4
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/account-research"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-ai-search-visibility",
+   "title": "AI Search Visibility",
+   "description": "Checks whether AI assistants and Google recommend you, and who they name instead. Starts from a handful of questions your buyers actually ask.",
+   "author": "Adam Tanguay",
+   "homepage": "https://x.ai/bot/marketplace/bots/ai-search-visibility",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/ai-search-visibility"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "hex",
+     "Profound",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/ai-search-visibility"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-alfred",
+   "title": "Alfred",
+   "description": "Designs, audits, and governs your Grok Bot organization so it matches real company outcomes, with clear human owners and no duplicate jobs. Recommends the smallest useful structure, defaults new bots to zero, and never creates or changes anything without your exact yes.",
+   "author": "Robin Delta",
+   "homepage": "https://x.ai/bot/marketplace/bots/alfred",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/alfred"
+   },
+   "metadata": {
+    "category": "operations",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/alfred"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-apple-search-ads-review",
+   "title": "Apple Search Ads Review",
+   "description": "Reviews your Apple Search Ads spend against your cost per install target. Drafts the keyword, bid, and budget changes, and never touches your account.",
+   "author": "Chris Everett",
+   "homepage": "https://x.ai/bot/marketplace/bots/apple-search-ads-review",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/apple-search-ads-review"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "hex",
+     "Databricks SQL",
+     "linear",
+     "Gmail",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/apple-search-ads-review"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-best-video-editor",
+   "title": "Video Edit Desk",
+   "description": "Turns uploaded footage into cut clips, burned-in captions, and platform-sized exports. Works from your notes and never overwrites the original.",
+   "author": "X Freeze",
+   "homepage": "https://x.ai/bot/marketplace/bots/best-video-editor",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/best-video-editor"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "figma"
+    ],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/best-video-editor"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-call-follow-ups",
+   "title": "Call Follow-Ups",
+   "description": "Turns each recorded call into a follow-up email in your voice, a next-steps note, and the CRM updates, including the qualification fields your team runs on. Watches Gong and Granola for new calls, and nothing sends or saves without your yes.",
+   "author": "Daniel Brill",
+   "homepage": "https://x.ai/bot/marketplace/bots/call-follow-ups",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/call-follow-ups"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Gong",
+     "Granola",
+     "Salesforce",
+     "HubSpot",
+     "Attio",
+     "Gmail",
+     "Outlook",
+     "Google Calendar",
+     "Slack",
+     "Notion",
+     "Linear",
+     "Hex"
+    ],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/call-follow-ups"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-chief-health",
+   "title": "Chief Health",
+   "description": "You're the Chief Health Officer. Every day, ask if training happened. If it did not, rewrite the next session so the week still holds. Read whatever workout app, nutrition app, wearable, or lab source is connected. Do not invent numbers. Never diagnose, prescribe, or post.",
+   "author": "AJAC",
+   "homepage": "https://x.ai/bot/marketplace/bots/chief-health",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/chief-health"
+   },
+   "metadata": {
+    "category": "personal",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/chief-health"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-clip-bot",
+   "title": "Clip Bot",
+   "description": "Finds the best moments in a long recording and cuts them into short captioned clips. Works from an upload or a link, with transcript and timestamps on every clip.",
+   "author": "This Week in AI",
+   "homepage": "https://x.ai/bot/marketplace/bots/clip-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/clip-bot"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "figma"
+    ],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/clip-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-company-docs-q-a",
+   "title": "Company Docs Q&A",
+   "description": "Answers product and how-to questions from live docs first, then connected knowledge sources, and always cites sources. Built for anyone who wants a trustworthy internal knowledge bot.",
+   "author": "Anoop Baliga",
+   "homepage": "https://x.ai/bot/marketplace/bots/company-docs-q-a",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/company-docs-q-a"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [
+     "Slack",
+     "Notion"
+    ],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/company-docs-q-a"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-competitor-watching",
+   "title": "Competitor Watch",
+   "description": "Tracks competitor pricing, product, and hiring pages and briefs you on real changes. Starts from a list of URLs you paste.",
+   "author": "Shimecki",
+   "homepage": "https://x.ai/bot/marketplace/bots/competitor-watching",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/competitor-watching"
+   },
+   "metadata": {
+    "category": "product",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear"
+    ],
+    "sortKeys": {
+     "skills": 5
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/competitor-watching"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-cooper",
+   "title": "Cooper",
+   "description": "News agent for AI, tech, venture capital, and business. Delivers a tight daily Slack briefing of top stories at 8am, plus weekday mid-day competitor alerts only when something truly clears the bar.",
+   "author": "Tommy Hansen",
+   "homepage": "https://x.ai/bot/marketplace/bots/cooper",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/cooper"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/cooper"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-credit-card-max",
+   "title": "Credit Card Max",
+   "description": "Credit card maxing with live Grok Finance (Plaid): which card to swipe given your priorities (points, cash back, airline/hotel status), statement-credit tracking with muteable expiry nags, wrong-card recurring flags, and a monthly points-and-perks rollup — not budgeting.",
+   "author": "Trevin Chow",
+   "homepage": "https://x.ai/bot/marketplace/bots/credit-card-max",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/credit-card-max"
+   },
+   "metadata": {
+    "category": "personal",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 2
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/credit-card-max"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-critiquito",
+   "title": "Critiquito: Design Critique",
+   "description": "Turns a screenshot or Figma link into a design critique with ranked, concrete fixes. Covers hierarchy, type, color, copy, and accessibility, and never edits your files.",
+   "author": "Manuel Muñoz Solera",
+   "homepage": "https://x.ai/bot/marketplace/bots/critiquito",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/critiquito"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "figma",
+     "slack",
+     "notion-workspace",
+     "linear"
+    ],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/critiquito"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-customer-call-coach",
+   "title": "Customer Call Coach & Assistant",
+   "description": "Briefs you before customer calls and coaches you after based on your performance.",
+   "author": "Anoop Baliga",
+   "homepage": "https://x.ai/bot/marketplace/bots/customer-call-coach",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/customer-call-coach"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Granola",
+     "Slack",
+     "Gmail"
+    ],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/customer-call-coach"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-customer-question-drafter",
+   "title": "Product Support Inbox Assistant",
+   "description": "Helps you find and draft answers to product questions. Never sends emails without you.",
+   "author": "Anoop Baliga",
+   "homepage": "https://x.ai/bot/marketplace/bots/customer-question-drafter",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/customer-question-drafter"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [
+     "Slack",
+     "Gmail",
+     "Granola"
+    ],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/customer-question-drafter"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-customer-stories",
+   "title": "Customer Proof Desk",
+   "description": "Turns call notes and transcripts into case studies, testimonials, and proof points. Quotes stay word for word from what you paste, and nothing publishes without your yes.",
+   "author": "Anoop Baliga",
+   "homepage": "https://x.ai/bot/marketplace/bots/customer-stories",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/customer-stories"
+   },
+   "metadata": {
+    "category": "sales",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "notion-workspace",
+     "slack",
+     "linear",
+     "figma",
+     "hex",
+     "Gmail",
+     "Granola"
+    ],
+    "sortKeys": {
+     "skills": 11
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/customer-stories"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-dan-lanning",
+   "title": "Dan Lanning",
+   "description": "Pitch and delivery coach for partnership, sponsorship, and high-stakes discovery calls. Reviews real call transcripts and returns sharp, evidence-based coaching — what landed, what to tighten, and exact phrasing upgrades — so feedback compounds over time.",
+   "author": "Jenna Nanpei",
+   "homepage": "https://x.ai/bot/marketplace/bots/dan-lanning",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/dan-lanning"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Notion",
+     "Google Calendar"
+    ],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/dan-lanning"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-deal-hunting",
+   "title": "Deal Hunting",
+   "description": "Landed-cost shopping: real prices, shipping and tax, preferred retailers. Watchlist optional. Never buys unless asked.",
+   "author": "Shimecki",
+   "homepage": "https://x.ai/bot/marketplace/bots/deal-hunting",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/deal-hunting"
+   },
+   "metadata": {
+    "category": "personal",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/deal-hunting"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-deal-qualification",
+   "title": "Deal Inspector",
+   "description": "Checks every deal that moved stage against your qualification criteria using the actual call transcripts. Quotes the evidence, flags what is missing, recommends promote or close, and proposes the CRM updates for your approval.",
+   "author": "Jon Grigull",
+   "homepage": "https://x.ai/bot/marketplace/bots/deal-qualification",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/deal-qualification"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Gong",
+     "Granola",
+     "Salesforce",
+     "HubSpot",
+     "Attio",
+     "Slack",
+     "Gmail",
+     "Notion",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 4
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/deal-qualification"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-dial-bot",
+   "title": "dial bot",
+   "description": "Places outbound Bland AI phone calls when you ask, then reports what happened. On first use it asks for a Bland API key and voice.",
+   "author": "Matt Palmer",
+   "homepage": "https://x.ai/bot/marketplace/bots/dial-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/dial-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/dial-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-distro-bot",
+   "title": "Distro Bot",
+   "description": "Runs your marketing loop end to end: campaigns on your ad accounts, fresh creative, real channel analysis, timely posts from X and web scans, and outbound until a lead replies. Learns from your past campaigns and never changes spend, posts, or sends without your yes.",
+   "author": "Shub Gaur",
+   "homepage": "https://x.ai/bot/marketplace/bots/distro-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/distro-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "X",
+     "Gmail"
+    ],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/distro-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-dr-eggbot-v2",
+   "title": "dr eggbot",
+   "description": "Designs high-quality Grok Bots. Asks a few preference questions, then creates them with CreateAgent. Coding bots get the poteto-mode bar (one job, unslopped, verified). Non-coding bots get the same tightness: one job, one voice, explicit anti-jobs, no leftover tools. Casual, a little mad-scientist, ",
+   "author": "Lauren Tan",
+   "homepage": "https://x.ai/bot/marketplace/bots/dr-eggbot-v2",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/dr-eggbot-v2"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "pstack"
+    ],
+    "sortKeys": {
+     "skills": 4
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/dr-eggbot-v2"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-ebr-value-deck-builder",
+   "title": "EBR & Value Deck Builder",
+   "description": "Builds an executive business review or value deck for a named account from your CRM, call history, and usage data, on your brand, and hands you an editable file. Never invents a number, and nothing goes to the customer without your yes.",
+   "author": "Krista Letz",
+   "homepage": "https://x.ai/bot/marketplace/bots/ebr-value-deck-builder",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/ebr-value-deck-builder"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Salesforce",
+     "HubSpot",
+     "Attio",
+     "Gong",
+     "Mixpanel",
+     "Google Drive",
+     "OneDrive"
+    ],
+    "sortKeys": {
+     "skills": 5
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/ebr-value-deck-builder"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-echo",
+   "title": "Meeting Recap Deck",
+   "description": "Turns your meeting notes into a recap deck in your slide template. Works from notes you paste or upload, and never invents a quote.",
+   "author": "Krista Letz",
+   "homepage": "https://x.ai/bot/marketplace/bots/echo",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/echo"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "figma",
+     "Google Slides",
+     "notion-workspace",
+     "slack",
+     "linear",
+     "Gmail",
+     "Google Calendar",
+     "Granola",
+     "Gong"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/echo"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-engineer-bot",
+   "title": "Lingxi's Engineer Bot",
+   "description": "A hands-off engineering supervisor. It boards work, launches cloud agents, watches PRs on a 30-minute cadence, and only asks you to merge. For anyone who wants this pipeline without a specific repo.",
+   "author": "Lingxi Li",
+   "homepage": "https://x.ai/bot/marketplace/bots/engineer-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/engineer-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [
+     "Notion"
+    ],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/engineer-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-engineering-lead",
+   "title": "Engineering Lead",
+   "description": "An engineering lead that owns the loop: breaks work into Cloud Agents, chases CI, reviews, and stalls on a weekday cadence, and only pings you when something is blocked, ready to merge, or done. Best for eng leads and power users.",
+   "author": "Lauren Tan",
+   "homepage": "https://x.ai/bot/marketplace/bots/engineering-lead",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/engineering-lead"
+   },
+   "metadata": {
+    "category": "engineering",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 5
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/engineering-lead"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-event-producer",
+   "title": "Event Producer",
+   "description": "Turns your event details into a run of show, guest list, and day-of checklist. Tracks vendors, guests, dietary needs, and travel, and never sends a message without you.",
+   "author": "Jenna Nanpei",
+   "homepage": "https://x.ai/bot/marketplace/bots/event-producer",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/event-producer"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "figma",
+     "Gmail",
+     "Google Calendar",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/event-producer"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-event-request-desk",
+   "title": "Event Request Desk",
+   "description": "Scores every event, sponsorship, and speaking ask, then drafts your yes or no. Works from a Slack channel or a paste, and never sends without you.",
+   "author": "Emma Weyrauch",
+   "homepage": "https://x.ai/bot/marketplace/bots/event-request-desk",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/event-request-desk"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "figma",
+     "hex",
+     "Gmail",
+     "Google Calendar",
+     "Google Drive",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/event-request-desk"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-figma-bro",
+   "title": "figma bro",
+   "description": "Turns a Figma frame into a build spec, and audits your components, tokens, and motion. Builds screens from a brief too, and works from a pasted link when Figma isn't connected.",
+   "author": "John Bai",
+   "homepage": "https://x.ai/bot/marketplace/bots/figma-bro",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/figma-bro"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "figma",
+     "notion-workspace",
+     "linear",
+     "slack"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/figma-bro"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-flora",
+   "title": "Flora",
+   "description": "Flora keeps a private houseplant care log and weekly reminders. She builds a plant journal on her computer that you can page through, and your plants do not copy if someone else installs her.",
+   "author": "Rich Silver",
+   "homepage": "https://x.ai/bot/marketplace/bots/flora",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/flora"
+   },
+   "metadata": {
+    "category": "personal",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 4
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/flora"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-follow-through-agent",
+   "title": "GTM Loop Closer",
+   "description": "Finds promises, follow-ups, and customer details left behind in meetings, email, Slack, CRM, or task tools. Shows the evidence and prepares the reply, task, or update needed to close each loop.",
+   "author": "Jon Grigull",
+   "homepage": "https://x.ai/bot/marketplace/bots/follow-through-agent",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/follow-through-agent"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Salesforce",
+     "Gmail",
+     "Google Calendar",
+     "Slack",
+     "Granola",
+     "Notion",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 5
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/follow-through-agent"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-frank",
+   "title": "frank",
+   "description": "EA chief-of-staff bot for exec support: conference rooms, interview prep, leadership outreach, Slack channel inventories, sheet↔calendar checks, and birthday/anniversary calendar loads.",
+   "author": "Natasha Kuo",
+   "homepage": "https://x.ai/bot/marketplace/bots/frank",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/frank"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Google Calendar",
+     "Gmail",
+     "Slack",
+     "Notion",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/frank"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-fuse",
+   "title": "Ad Spend Watch",
+   "description": "Watches your ad spend and performance and flags what's breaking before it burns budget. Works from a pasted export, and never pauses a campaign without your yes.",
+   "author": "Miguel Cruz",
+   "homepage": "https://x.ai/bot/marketplace/bots/fuse",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/fuse"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "hex",
+     "datadog",
+     "sentry",
+     "figma",
+     "Gmail",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 9
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/fuse"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-haggle-bot",
+   "title": "Haggle Bot",
+   "description": "Inventories your SaaS spend from Ramp and bills, finds evidence-backed savings (unused seats, duplicates, cheaper alternatives), and drafts vendor counters for your review. Never spends, signs, or sends without you.",
+   "author": "Daniel Gartshein",
+   "homepage": "https://x.ai/bot/marketplace/bots/haggle-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/haggle-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Ramp",
+     "Google Sheets",
+     "Gmail",
+     "Slack",
+     "Notion",
+     "Google Drive",
+     "Granola"
+    ],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/haggle-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-hiring-activity-monitor",
+   "title": "Hiring Signals",
+   "description": "Tracks hiring activity across selected companies and job sources. Highlights meaningful changes, matches them to accounts and owners, and passes the right context into research or prospecting workflows.",
+   "author": "Simon Lackowski",
+   "homepage": "https://x.ai/bot/marketplace/bots/hiring-activity-monitor",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/hiring-activity-monitor"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Google Sheets",
+     "Notion",
+     "Slack",
+     "Salesforce"
+    ],
+    "sortKeys": {
+     "skills": 3
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/hiring-activity-monitor"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-home-robots",
+   "title": "Home robots",
+   "description": "Control home robots from chat: a Segway Navimow, a Matic vacuum, and other official vacuums, mowers, and Matter robots. Connect each once, then say start, pause, dock, or how's it doing.",
+   "author": "Sawyer Merritt",
+   "homepage": "https://x.ai/bot/marketplace/bots/home-robots",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/home-robots"
+   },
+   "metadata": {
+    "category": "personal",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/home-robots"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-human-copywriter",
+   "title": "Copy Humanizer",
+   "description": "Edits and rewrites drafts, emails, and pages so they read like a person wrote them. Keeps your voice, shows every change and why, and never invents a fact.",
+   "author": "Massimo De Luisa",
+   "homepage": "https://x.ai/bot/marketplace/bots/human-copywriter",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/human-copywriter"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "notion-workspace",
+     "slack",
+     "figma",
+     "linear",
+     "Gmail"
+    ],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/human-copywriter"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-image-gen-bot",
+   "title": "Stills & Clips Desk",
+   "description": "Pulls stills, thumbnails, and short clips out of your footage, sized for where they go. Cleans up screenshots for docs too, and writes the caption and alt text.",
+   "author": "Matt Palmer",
+   "homepage": "https://x.ai/bot/marketplace/bots/image-gen-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/image-gen-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "figma",
+     "linear"
+    ],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/image-gen-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-imogen",
+   "title": "Imogen",
+   "description": "Imogen the Impala Image Interpreter writes brief, copyable alt text focused on the most important part of an image, so images are accessible to blind people.",
+   "author": "Kent C. Dodds",
+   "homepage": "https://x.ai/bot/marketplace/bots/imogen",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/imogen"
+   },
+   "metadata": {
+    "category": "design",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/imogen"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-import-bot",
+   "title": "Import Bot",
+   "description": "Brings your setup from Claude Cowork, Codex, ChatGPT, OpenClaw, and Hermes into Grok Bot, then creates the expert bots that cover it or adds to the bots you already have. Changes nothing in the old tools and scrubs secrets before anything is saved.",
+   "author": "Shub Gaur",
+   "homepage": "https://x.ai/bot/marketplace/bots/import-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/import-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 20
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/import-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-last30days",
+   "title": "last30days",
+   "description": "Research what people actually say about any topic in the last 30 days. Installs the latest last30days skill from GitHub, walks first-run setup (ScrapeCreators via GitHub for the full free credits, X, YouTube, and the free CLIs), then writes a grounded brief from Reddit, X, YouTube, TikTok, Hacker Ne",
+   "author": "Matt Van Horn",
+   "homepage": "https://x.ai/bot/marketplace/bots/last30days",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/last30days"
+   },
+   "metadata": {
+    "category": "product",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/last30days"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-leadsworth",
+   "title": "Lead Pipeline Desk",
+   "description": "Scores your inbound leads, merges duplicates, assigns an owner, and flags what's stuck. Works from a CRM export, a sheet, or a paste, and never sends anything without you.",
+   "author": "Miguel Cruz",
+   "homepage": "https://x.ai/bot/marketplace/bots/leadsworth",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/leadsworth"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "hex",
+     "Databricks SQL",
+     "Gmail",
+     "Google Sheets",
+     "Salesforce"
+    ],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/leadsworth"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-love",
+   "title": "Love ❤️",
+   "description": "Takes the admin out of being a good Partner so the attention can go where it counts. Reminds, researches, and queues dates, tables, and presents; you book, buy, and show up.",
+   "author": "Danny Buck",
+   "homepage": "https://x.ai/bot/marketplace/bots/love",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/love"
+   },
+   "metadata": {
+    "category": "personal",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Google Calendar"
+    ],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/love"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-luma-pages",
+   "title": "Luma Pages",
+   "description": "Builds and updates private Luma event pages for field marketers — copy, branding, registration settings, capacity and waitlist, and registration-list hygiene. Pairs with a Notion docs agent so the event brief and Luma page stay in sync.",
+   "author": "Jenna Nanpei",
+   "homepage": "https://x.ai/bot/marketplace/bots/luma-pages",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/luma-pages"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [
+     "Notion"
+    ],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/luma-pages"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-market-researcher",
+   "title": "Market Researcher",
+   "description": "Tracks how competitors market: their ads and creative, landing pages, offers, pricing, channel mix, search overlap, and content cadence, then delivers a weekly brief of what changed with screenshots and marketing counter-moves. Never posts, contacts anyone, signs up for anything, or spends on ads.",
+   "author": "Josh Kim",
+   "homepage": "https://x.ai/bot/marketplace/bots/market-researcher",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/market-researcher"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "X",
+     "Google Sheets",
+     "Google Drive",
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 10
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/market-researcher"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-marketing-analyst",
+   "title": "Marketing Analyst",
+   "description": "Turns your ad platform exports into weekly and monthly paid media reports with commentary, answers reporting asks with the real number and its source, and watches spend against the thresholds you set. Never touches a campaign, never changes a budget, and never sends without your yes.",
+   "author": "Josh Kim",
+   "homepage": "https://x.ai/bot/marketplace/bots/marketing-analyst",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/marketing-analyst"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Google Sheets",
+     "Google Drive",
+     "Gmail",
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 9
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/marketing-analyst"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-marketing-project-manager",
+   "title": "Project Manager",
+   "description": "Turns a campaign or launch goal into a dated plan across research, positioning, landing pages, ads, and analytics, then tracks every work item, chases status with screenshots, and runs the merge and spend gates. Never merges, publishes, or spends, and never approves on your behalf.",
+   "author": "Josh Kim",
+   "homepage": "https://x.ai/bot/marketplace/bots/marketing-project-manager",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/marketing-project-manager"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Linear",
+     "Notion",
+     "Slack",
+     "Google Drive",
+     "Google Calendar"
+    ],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/marketing-project-manager"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-mr-toms",
+   "title": "Recruiting Coordinator",
+   "description": "Schedules interview loops, preps your interviewers, and chases what's stalled. Works from your calendar or a pasted list, and never emails a candidate without you.",
+   "author": "Tommy Hansen",
+   "homepage": "https://x.ai/bot/marketplace/bots/mr-toms",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/mr-toms"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "figma",
+     "Gmail",
+     "Google Calendar",
+     "Granola",
+     "Google Sheets",
+     "Ashby"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/mr-toms"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-nightly-audit-engineer",
+   "title": "Nightly Audit Engineer",
+   "description": "A nightly engineering auditor that researches a whole codebase, then ships one cleanup per area. Built for teams that want a research-then-spread-out cleanup habit; defaults to 4am and asks when to run.",
+   "author": "Lingxi Li",
+   "homepage": "https://x.ai/bot/marketplace/bots/nightly-audit-engineer",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/nightly-audit-engineer"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/nightly-audit-engineer"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-nyc-parent",
+   "title": "NYC Parent",
+   "description": "A family chief of staff for New York City parents. It tracks school, calendar, activities, and household logistics, turns incoming information into next actions, and keeps adults in control of spending, messages, and private information.",
+   "author": "Dennison",
+   "homepage": "https://x.ai/bot/marketplace/bots/nyc-parent",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/nyc-parent"
+   },
+   "metadata": {
+    "category": "personal",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/nyc-parent"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-office-ops-desk",
+   "title": "Office Ops Desk",
+   "description": "Tracks office shipments, facilities issues, and team birthdays, then writes the digests. Works from a pasted list or a spreadsheet, and never sends without you.",
+   "author": "Erika Cabrera",
+   "homepage": "https://x.ai/bot/marketplace/bots/office-ops-desk",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/office-ops-desk"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "Gmail",
+     "Google Calendar",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/office-ops-desk"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-overheard",
+   "title": "Overheard",
+   "description": "Watches Reddit, Hacker News, news sites, and X for third-party mentions of your name, brand, and URLs, then sends a short weekday digest when something clears the bar. Stays quiet on dead days and never posts on your behalf.",
+   "author": "Lenny Rachitsky",
+   "homepage": "https://x.ai/bot/marketplace/bots/overheard",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/overheard"
+   },
+   "metadata": {
+    "category": "other",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "X",
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 2
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/overheard"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-performance-marketer",
+   "title": "Performance Marketer",
+   "description": "Turns approved ad copy into paused campaign shells for messaging tests in the ad platforms the user signs in to, with a review sheet they approve first and a screenshot per step. Never enables a campaign, raises a budget, adds a payment method, or spends without an explicit yes.",
+   "author": "Josh Kim",
+   "homepage": "https://x.ai/bot/marketplace/bots/performance-marketer",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/performance-marketer"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Google Sheets",
+     "Google Drive",
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/performance-marketer"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-pfp-bot",
+   "title": "Pfp Bot",
+   "description": "Turns your X photo, an upload, a selfie, or a pet pic into a tiny Grokbot-style icon with capsule eyes that keeps the hair, colors, and signature look. Style and prompt by @Multi_Serio_Ai.\nAsks for more photos when unsure, and never makes realistic likenesses or posts anything.",
+   "author": "Shub Gaur",
+   "homepage": "https://x.ai/bot/marketplace/bots/pfp-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/pfp-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [
+     "X"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/pfp-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-pg",
+   "title": "Outbound Prospecting",
+   "description": "Finds prospects that match your ideal customer, then drafts a first message to each one. Every name is researched on the public web, and nothing sends without your yes.",
+   "author": "Krista Letz",
+   "homepage": "https://x.ai/bot/marketplace/bots/pg",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/pg"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "Gmail",
+     "Google Sheets",
+     "X",
+     "Salesforce"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/pg"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-pipeline-health-and-forecast",
+   "title": "Pipeline Pulse",
+   "description": "Scans your full pipeline for movement, stale next steps, forecast risk, and CRM gaps. Shows what changed across the book and drafts the updates needed to keep the forecast honest.",
+   "author": "Krista Letz",
+   "homepage": "https://x.ai/bot/marketplace/bots/pipeline-health-and-forecast",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/pipeline-health-and-forecast"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Salesforce",
+     "Gmail",
+     "Slack",
+     "Granola",
+     "Notion",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 3
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/pipeline-health-and-forecast"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-pitch-deck-coach",
+   "title": "Pitch Deck Coach",
+   "description": "Reviews a pitch deck and reports what an investor is likely to understand, believe, question, and remember, then helps strengthen the story, evidence, and slides.",
+   "author": "Hiten Shah",
+   "homepage": "https://x.ai/bot/marketplace/bots/pitch-deck-coach",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/pitch-deck-coach"
+   },
+   "metadata": {
+    "category": "sales",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 4
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/pitch-deck-coach"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-pm-bot",
+   "title": "PM bot",
+   "description": "Acts as your PM. Writes the dated cut: what's in, what's out, and how you'll know it's done. Engineering doesn't start until you approve it.",
+   "author": "Ulysses Ng",
+   "homepage": "https://x.ai/bot/marketplace/bots/pm-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/pm-bot"
+   },
+   "metadata": {
+    "category": "product",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 3
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/pm-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-product-idea-stress-test",
+   "title": "Product Idea Stress Test",
+   "description": "Investigates a product or startup idea for founders. Surfaces what has to be true, evidence for and against, the assumption most likely to kill it, and what to test next.",
+   "author": "Hiten Shah",
+   "homepage": "https://x.ai/bot/marketplace/bots/product-idea-stress-test",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/product-idea-stress-test"
+   },
+   "metadata": {
+    "category": "product",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 3
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/product-idea-stress-test"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-product-marketer",
+   "title": "Product Marketer",
+   "description": "Learns your product, brand, and market, turns competitive research into positioning principles every message is measured against, and drafts landing page, ads, and email copy that holds to them. Drafts only, and never publishes, sends, or spends.",
+   "author": "Josh Kim",
+   "homepage": "https://x.ai/bot/marketplace/bots/product-marketer",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/product-marketer"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Google Drive",
+     "Google Sheets",
+     "Notion",
+     "X"
+    ],
+    "sortKeys": {
+     "skills": 9
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/product-marketer"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-projects-manager",
+   "title": "Projects Manager",
+   "description": "Runs your team's projects from Notion: one row per project, a channel per project, and tasks your specialist bots claim. You decide, agents execute, and it never does the specialist work itself.",
+   "author": "Eric Zakariasson",
+   "homepage": "https://x.ai/bot/marketplace/bots/projects-manager",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/projects-manager"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [
+     "Notion",
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/projects-manager"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-prospector",
+   "title": "GTM Prospecting",
+   "description": "Turns an ideal customer profile into a focused prospect list, adds useful context, and checks for existing relationships. Drafts first-touch email and LinkedIn messages for your review.",
+   "author": "Caro Scalercio",
+   "homepage": "https://x.ai/bot/marketplace/bots/prospector",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/prospector"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Gmail",
+     "Google Sheets",
+     "Notion",
+     "Salesforce"
+    ],
+    "sortKeys": {
+     "skills": 3
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/prospector"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-proto-bot",
+   "title": "Proto Bot",
+   "description": "Turns your daily ideas into live, shareable prototypes in your real app, built as draft pull requests with click-path screenshots and a short video, plus Figma mocks, images, and memes on the side. Never merges, publishes, or shares without your yes.",
+   "author": "Shub Gaur",
+   "homepage": "https://x.ai/bot/marketplace/bots/proto-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/proto-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Figma",
+     "Slack",
+     "X"
+    ],
+    "sortKeys": {
+     "skills": 9
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/proto-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-qa-bot",
+   "title": "QA bot",
+   "description": "Acts as your QA on the live deploy: runs the acceptance checklist and says pass or fail before you ship.",
+   "author": "Ulysses Ng",
+   "homepage": "https://x.ai/bot/marketplace/bots/qa-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/qa-bot"
+   },
+   "metadata": {
+    "category": "engineering",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Vercel"
+    ],
+    "sortKeys": {
+     "skills": 3
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/qa-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-researchy",
+   "title": "Researchy",
+   "description": "A research and fact-check desk that runs every pass on the latest Grok model with live web search. For anyone who needs sourced, dated claims instead of a training-only answer.",
+   "author": "Farzad",
+   "homepage": "https://x.ai/bot/marketplace/bots/researchy",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/researchy"
+   },
+   "metadata": {
+    "category": "engineering",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/researchy"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-sable-game-art",
+   "title": "Game Art Director",
+   "description": "Turns a game concept into a style guide, palettes, and prompt sheets for your image tool. Slices sprite sheets and checks your art for palette and grid drift.",
+   "author": "Danny Limanseta",
+   "homepage": "https://x.ai/bot/marketplace/bots/sable-game-art",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/sable-game-art"
+   },
+   "metadata": {
+    "category": "design",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "figma",
+     "notion-workspace",
+     "slack",
+     "linear"
+    ],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/sable-game-art"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-sales-call-coach",
+   "title": "Sales Call Coach",
+   "description": "Scores your sales calls and tells you what to fix before the next one. Works from a pasted transcript or an uploaded recording.",
+   "author": "Daniel Brill",
+   "homepage": "https://x.ai/bot/marketplace/bots/sales-call-coach",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/sales-call-coach"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "notion-workspace",
+     "slack",
+     "linear",
+     "Gong",
+     "Google Calendar"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/sales-call-coach"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-seed-a91e4c",
+   "title": "SWE",
+   "description": "Cursor's software engineer bot: writes code, triages issues, monitors production, and more.",
+   "author": "Cursor",
+   "homepage": "https://x.ai/bot/marketplace/bots/seed-a91e4c",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/seed-a91e4c"
+   },
+   "metadata": {
+    "category": "engineering",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/seed-a91e4c"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-sell-bot",
+   "title": "Sell Bot",
+   "description": "Works your whole customer journey: outreach in your voice, booked calls with prep and follow-ups, proposals and contracts, then activation, support and billing answers, and expansion. Drafts everything for your review and sends only what you approve, one message at a time.",
+   "author": "Shub Gaur",
+   "homepage": "https://x.ai/bot/marketplace/bots/sell-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/sell-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Gmail",
+     "Google Calendar",
+     "Granola",
+     "Google Sheets",
+     "Slack",
+     "X"
+    ],
+    "sortKeys": {
+     "skills": 11
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/sell-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-seo-aeo-desk",
+   "title": "SEO & AEO Desk",
+   "description": "Turns your keywords into content ideas and writer-ready briefs for search and AI answers. Works from a pasted keyword list or your Search Console.",
+   "author": "Adam Tanguay",
+   "homepage": "https://x.ai/bot/marketplace/bots/seo-aeo-desk",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/seo-aeo-desk"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "notion-workspace",
+     "slack",
+     "linear",
+     "hex",
+     "Profound",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 7
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/seo-aeo-desk"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-sequencer",
+   "title": "Sequencer",
+   "description": "Runs outbound as a staff function: queues prospects that match your ICP, keeps sequence state on your tracker, and stages every touch as a draft in your voice learned from your sent mail. Never sends, never writes to your CRM without your yes, and never invents research or contacts.",
+   "author": "Simon Lackowski",
+   "homepage": "https://x.ai/bot/marketplace/bots/sequencer",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/sequencer"
+   },
+   "metadata": {
+    "category": "sales",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Gmail",
+     "Google Sheets",
+     "Salesforce",
+     "Google Calendar",
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 9
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/sequencer"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-sherlock",
+   "title": "Talent Discovery",
+   "description": "Finds candidates for open roles that match your criteria and aren't already in your ATS.",
+   "author": "Tommy Hansen",
+   "homepage": "https://x.ai/bot/marketplace/bots/sherlock",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/sherlock"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "figma",
+     "Gmail",
+     "Google Sheets",
+     "Ashby"
+    ],
+    "sortKeys": {
+     "skills": 9
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/sherlock"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-signal-prospector",
+   "title": "Signal Prospector",
+   "description": "Finds the accounts and people in your CRM and product data that just showed intent, ranks them, and drafts the first touch. Runs on a schedule, explains every signal, and nothing sends without your yes.",
+   "author": "Krista Letz",
+   "homepage": "https://x.ai/bot/marketplace/bots/signal-prospector",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/signal-prospector"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Salesforce",
+     "HubSpot",
+     "Attio",
+     "Mixpanel",
+     "X",
+     "Hunter",
+     "Clay",
+     "Gmail",
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 5
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/signal-prospector"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-site-audit",
+   "title": "Site Audit",
+   "description": "SEO + content + speed + a11y + CRO + schema audit. Scored, P0/P1/P2, evidence URLs. Monthly diff. No invented metrics.",
+   "author": "Shimecki",
+   "homepage": "https://x.ai/bot/marketplace/bots/site-audit",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/site-audit"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 0
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/site-audit"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-skippy",
+   "title": "skippy",
+   "description": "A San Francisco street-cleaning assistant. Paste a Maps pin, address, or intersection and it tells you the next posted sweep on that curb. Uses public city data. Never claims a stall is legal.",
+   "author": "Matt Palmer",
+   "homepage": "https://x.ai/bot/marketplace/bots/skippy",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/skippy"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/skippy"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-stalk-bot",
+   "title": "Stalk Bot",
+   "description": "Signs up for your competitors' newsletters and products under its own research email, walks their onboarding on video, and watches their site, pricing, changelog, jobs, and X. Each pulse reports what changed against your positioning and closes with counterpositioning moves, and it never posts or con",
+   "author": "Shub Gaur",
+   "homepage": "https://x.ai/bot/marketplace/bots/stalk-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/stalk-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "AgentMail",
+     "X",
+     "Gmail",
+     "Slack",
+     "Salesforce",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 19
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/stalk-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-startup-qa-bot",
+   "title": "Startup QA Bot",
+   "description": "Walks your product every weekday in its own test account and tells you what shipped, what got unshipped, what broke (with repro steps and screenshots), and which calls need you. Reads its own verification emails or takes pasted codes, and never touches real data.",
+   "author": "Shub Gaur",
+   "homepage": "https://x.ai/bot/marketplace/bots/startup-qa-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/startup-qa-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "AgentMail",
+     "GitHub",
+     "Linear"
+    ],
+    "sortKeys": {
+     "skills": 5
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/startup-qa-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-tally",
+   "title": "Paid Media Report Desk",
+   "description": "Turns your Google Ads, Meta, and LinkedIn exports into one weekly report with commentary. Answers reporting asks in Slack with real numbers, and never posts without your yes.",
+   "author": "Miguel Cruz",
+   "homepage": "https://x.ai/bot/marketplace/bots/tally",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/tally"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "slack",
+     "notion-workspace",
+     "linear",
+     "hex",
+     "Databricks SQL",
+     "Gmail",
+     "Google Sheets"
+    ],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/tally"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-tech-demos",
+   "title": "Tech Demos",
+   "description": "Weekday X-bookmark scout that picks one new library to demo, asks for approval, then plans and builds it in a sticky monorepo with a Cursor cloud agent. For anyone who wants a daily public-tech playground, not a changelog digest.",
+   "author": "Matt Palmer",
+   "homepage": "https://x.ai/bot/marketplace/bots/tech-demos",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/tech-demos"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "X"
+    ],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/tech-demos"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-the-morning-newspaper",
+   "title": "The Morning Newspaper",
+   "description": "A newspaper customized to you. It pulls from your email and calendar, lays it out for you, and prints while you sleep. Created by @karenxcheng",
+   "author": "Karen X. Cheng",
+   "homepage": "https://x.ai/bot/marketplace/bots/the-morning-newspaper",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/the-morning-newspaper"
+   },
+   "metadata": {
+    "category": "personal",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/the-morning-newspaper"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-tinkabot",
+   "title": "tinkabot",
+   "description": "Wraps an API into a Cursor/Agent Plugin (MCP + skills). Data shape first, smallest scaffold that works, prove locally, then ask once for affiliation and publish to Marketplace or cursor.directory.",
+   "author": "Lauren Tan",
+   "homepage": "https://x.ai/bot/marketplace/bots/tinkabot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/tinkabot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [
+     "pstack"
+    ],
+    "sortKeys": {
+     "skills": 3
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/tinkabot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-tradbot-2",
+   "title": "Tradbot",
+   "description": "Watches your personal email and calendar so school forms, bills, and RSVPs don't slip. Drafts the reply, catches the pickup clash, and never sends without you.",
+   "author": "Claire Vo",
+   "homepage": "https://x.ai/bot/marketplace/bots/tradbot-2",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/tradbot-2"
+   },
+   "metadata": {
+    "category": "other",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Gmail",
+     "Google Calendar",
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 3
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/tradbot-2"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-video-editor",
+   "title": "Video Editor",
+   "description": "Edits short vertical talking-head videos from your raw footage: picks the best takes, captions what you actually said, and adds B-roll, motion graphics, and music. Sends an edit plan for your yes before cutting, checks every cut for sync and glitches, and never posts.",
+   "author": "Ethan Ng",
+   "homepage": "https://x.ai/bot/marketplace/bots/video-editor",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/video-editor"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [
+     "Remotion",
+     "Google Drive"
+    ],
+    "sortKeys": {
+     "skills": 5
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/video-editor"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-warm-intro-finder",
+   "title": "GTM Connections",
+   "description": "Finds credible ways into a target account through mutual contacts, past conversations, shared history, and prior meetings. Ranks the best paths, drafts the introduction ask, and tracks what happened.",
+   "author": "Brian Joseph",
+   "homepage": "https://x.ai/bot/marketplace/bots/warm-intro-finder",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/warm-intro-finder"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Gmail",
+     "Google Calendar",
+     "Salesforce",
+     "Notion",
+     "Google Sheets",
+     "Slack"
+    ],
+    "sortKeys": {
+     "skills": 3
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/warm-intro-finder"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-webby",
+   "title": "Webby",
+   "description": "Website admin. Owns a personal site (rebuild + live fallback, exclusive long-form and newsletter) and a public weekday dashboard. Also owns newsletter sends: exclusive the same day a new piece ships; digest the next morning after that day's social pulse is finished. Create-only, no deletes. Strip AI",
+   "author": "Farzad",
+   "homepage": "https://x.ai/bot/marketplace/bots/webby",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/webby"
+   },
+   "metadata": {
+    "category": "personal",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "X"
+    ],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/webby"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-website-ops",
+   "title": "Website Ops",
+   "description": "Ships website changes as pull requests from your site repo with before and after screenshots in chat, and runs evidence backed audits of SEO, content, speed, accessibility, CRO, and schema. Never merges, deploys, changes DNS, or edits analytics without your explicit yes.",
+   "author": "Josh Kim",
+   "homepage": "https://x.ai/bot/marketplace/bots/website-ops",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/website-ops"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "GitHub",
+     "Google Drive",
+     "Slack",
+     "Figma"
+    ],
+    "sortKeys": {
+     "skills": 8
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/website-ops"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-writing-bot",
+   "title": "Writing Bot",
+   "description": "A writing partner for drafting and revising essays, emails, docs, and other prose. It uses a structured revision workflow so the result is clearer and better organized while keeping the writer's meaning, facts, and voice.",
+   "author": "Matt Palmer",
+   "homepage": "https://x.ai/bot/marketplace/bots/writing-bot",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/writing-bot"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot"
+    ],
+    "keywords": [],
+    "sortKeys": {
+     "skills": 1
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/writing-bot"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-wtd",
+   "title": "WTD",
+   "description": "WTD is a VIP hospitality planning partner for marketing ops — project-plan and status rhythm across tentpoles and ticket banks, nomination-sheet tracking, marketing-visible status hubs, and decks or agendas. Sales owns guest inviting; this bot keeps the plan and status clean without dumping private ",
+   "author": "Jenna Nanpei",
+   "homepage": "https://x.ai/bot/marketplace/bots/wtd",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/wtd"
+   },
+   "metadata": {
+    "category": "from-grok-bot-team",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "Notion",
+     "Slack",
+     "Gmail",
+     "Google Drive"
+    ],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/wtd"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-plugin-grok-x-brief",
+   "title": "X Brief",
+   "description": "Turns the accounts and topics you pick on X into one short daily brief. Reads your X connection or handles you paste, and never posts on your behalf.",
+   "author": "Dan McAteer",
+   "homepage": "https://x.ai/bot/marketplace/bots/x-brief",
+   "repository": {
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/x-brief"
+   },
+   "metadata": {
+    "category": "marketing",
+    "labels": [
+     "grok-bot",
+     "has-routines"
+    ],
+    "keywords": [
+     "X",
+     "slack",
+     "notion-workspace",
+     "linear"
+    ],
+    "sortKeys": {
+     "skills": 6
+    }
+   },
+   "dist-tags": {
+    "latest": "0.1.0"
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1792078026,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+      "commit": "0000000000000000000000000000000000000000",
+      "path": "bots/x-brief"
+     },
+     "engines": {
+      "dsh": "*"
+     }
+    }
+   ]
+  }
+ ]
+}

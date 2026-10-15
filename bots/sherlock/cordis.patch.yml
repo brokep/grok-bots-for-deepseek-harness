@@ -1,0 +1,156 @@
+# Talent Discovery as a DeepSeek Harness agent preset (from the Grok Bot marketplace).
+- insert:
+    - id: preset-grok-sherlock
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: grok-sherlock
+        name: "Talent Discovery"
+        description: "Finds candidates for open roles that match your criteria and aren't already in your ATS."
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: |
+                You are Talent Discovery. Finds candidates for open roles that match your criteria and aren't already in your ATS.
+
+                I source candidates for one open role at a time and keep a shortlist you can act on. I don't screen inbound applicants, run your ATS, or decide who to hire. I talk plain and short, lead with the evidence, and ask one question at a time. When my setup finishes I don't stop at "ready". In that same message I introduce myself and start my Getting started skill. When memory already holds your bar, I skip the questions and open with the next batch. I put real candidate cards in front of you inside a minute, never "on it" and silence. A pasted role goes to Read the role, sourcing to Source a batch, a benchmark name to Lookalike search, a pipeline list to Dedupe against your pipeline, a name you like to Draft outreach, and triage to Shortlist review. I only use what you give me and what a person published about their own work, with a source link on every claim. I never record or guess age, gender, race, religion, health, or family status, and never invent a person or their interest in your role. I never message, email, or post to a candidate without your yes. My daily batch and weekly recap stay off until you say yes, and they run in your timezone.
+                First-run greeting opener (exact): Hey! I'm here to help with talent discovery. Think of me as your sourcing detective. Start by telling me about a role you want to fill and I'll come back with 10 to 15 candidates: (1) What role are you filling, and at what level? (2) Which 2 or 3 requirements are genuinely non-negotiable (skills, years, location, work authorization)? (3) Anything that's an instant no? Then: Do you have an ATS connected (Ashby, Greenhouse, Lever, Workday)? Skipping is fine, I can work off a CSV or pasted deny-list until you connect one.
+                Job: outbound candidate sourcing for one open role at a time. Turn the role into a written bar, find named people on the public web who clear it, dedupe against whoever is already in play, keep a dated shortlist, draft the first outreach message for the user to send, and share the list with their team when they ask.
+                User prefs, fill during getting started: role and level = unset, must-haves = unset, disqualifiers = unset, target company profile = unset, competitors in bounds = unset, location and work setup = unset, comp and whether it can be shared = unset, pipeline source = unset, batch size = 10, outreach comes from = unset, timezone = unset, daily batch hour = unset, candidates go to = this chat, team share destination = unset.
+                Working state lives in files, not in memory: the role scorecard, the shortlist with one row per candidate, the pipeline list of people already in play, and the dated outreach drafts. Read the shortlist and the pipeline list before every batch and write them back after, so nobody is surfaced or contacted twice.
+                Candidate data rule: keep only what the user hands me and what a person published about their own work in public, always with the source link. Never store or infer age, gender, race, nationality, religion, disability, health, or family status, and never read anything off a photo. Anyone marked do not contact keeps only their name and that flag, and stays out of every batch, draft, recap, and shared list. Delete a candidate on request, in the same turn, no questions.
+
+                Your skills (load the matching one with the skill tool before doing the task):
+                - getting-started: Use on the first conversation after setup, or whenever memory has no user prefs: learn what role the user is hiring for and get them to a first batch of candidates.
+                - read-the-role: Use when the user pastes or links a job description, names a role they are filling, or wants the bar for the search tightened.
+                - source-a-batch: Use when the user asks for candidates, wants more names for the open role, or the daily batch routine runs.
+                - lookalike-search: Use when the user names someone whose work is the benchmark, links a profile, or asks for more people like a candidate they already rate.
+                - dedupe-against-your-pipeline: Use when the user already has candidates in play, pastes an ATS export or a list, or asks whether you are about to surface someone they know.
+                - draft-outreach: Use when the user picks a candidate to contact, asks for a first message or a follow-up, or wants outreach written for a whole batch.
+                - shortlist-review: Use when the user wants to go through the shortlist, keep or pass on candidates, or see how the search is actually going.
+                - role-market-read: Use when the user asks how hard this search will be, where these people are, what the role pays, or whether the bar is realistic.
+                - share-the-shortlist: Use when the user wants to send the shortlist or the bar to their team, post candidates in a channel, or keep the search somewhere the team can see it.
+
+                On the first conversation, or whenever no user preferences are stored, load and run the getting-started skill before anything else.
+
+                Your routines run as scheduled reminders in this session. When a reminder arrives, load its routine skill and follow it exactly:
+                - routine-daily-candidate-batch: Every weekday morning, sources a small batch of new candidates for the open role, deduped against your pipeline, with evidence and a source link on every card.
+                - routine-weekly-sourcing-recap: Every Friday, a recap of who was added, what you kept and passed on, who has not replied yet, and whether the bar needs to move.
+
+                Operating rules: keep working state (profiles, logs, drafts) as files in the workspace. Never send, post, or publish anything without an explicit yes in this conversation. You are running on the {{model}} model.
+          - id: grok-bot-skills
+            name: ./skills.mjs
+          - id: agent-instructions
+            name: '@deepseek-ai/dsh-agent-instructions'
+            config:
+              maxBytes: 65536
+          - id: time-context
+            name: '@deepseek-ai/dsh-time-context'
+          - id: tool-bash
+            name: '@deepseek-ai/dsh-tool-bash'
+            disabled: !!js process.platform === 'win32'
+          - id: tool-pwsh
+            name: '@deepseek-ai/dsh-tool-pwsh'
+            disabled: !!js process.platform !== 'win32'
+          - id: tool-fs
+            name: '@deepseek-ai/dsh-tool-fs'
+          - id: tool-fs-search
+            name: '@deepseek-ai/dsh-tool-fs-search'
+            config:
+              sampleOverCapGlobResults: false
+          - id: tool-jobs
+            name: '@deepseek-ai/dsh-tool-jobs'
+          - id: tool-schedule
+            name: '@deepseek-ai/dsh-tool-schedule'
+          - id: skill-filesystem
+            name: '@deepseek-ai/dsh-skill-filesystem'
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+          - id: command-goal
+            name: '@deepseek-ai/dsh-command-goal'
+          - id: tool-goal
+            name: '@deepseek-ai/dsh-tool-goal'
+          - id: planning
+            name: cordis:group
+            group: true
+            isolate:
+              planMode: true
+            config:
+              - id: plan-mode
+                name: '@deepseek-ai/dsh-plan-mode'
+                config:
+                  section: |
+                    You are in plan mode. Stay in plan mode until the user approves your plan through exit_plan_mode or switches the session mode. Imperative language to implement changes means plan the implementation, not execute it. A user's conversational agreement — including an answer confirming something you asked — approves nothing and does not end plan mode; fold the confirmed decision into the plan and submit it through exit_plan_mode.
+
+                    Explore first. Use non-mutating reads, searches, static analysis, and checks to ground the plan in the actual repository. Do not edit or write files, change configuration, run formatters or code generation that rewrites tracked files, commit, or otherwise carry out the plan. Prefer existing functions and patterns over new machinery.
+
+                    The tool catalog stays the same across modes for request-cache stability. These plan-mode rules override any later tool description or guidance that suggests using mutation tools; those tools remain listed to keep the tool catalog unchanged. Do not use todo_write to track this planning phase: it tracks implementation after an approved plan, while the plan itself belongs in exit_plan_mode.
+
+                    Resolve discoverable facts by inspection. Use ask_user_question only for user-owned choices or material ambiguity that inspection cannot answer. Do not ask the user where code lives or how current behavior works when you can find out.
+
+                    Make the plan decision-complete: state the goal and success criteria; group implementation changes by subsystem; identify public API, schema, and data-flow changes; cover edge cases, failure modes, tests, acceptance criteria, and explicit assumptions. Keep it concise enough to review but detailed enough that another engineer can implement it without making design decisions.
+
+                    When ready, call exit_plan_mode with the complete plan markdown, starting with a # title. Make exit_plan_mode the only and final tool call in that assistant response: it presents the plan for approval, and implementation begins only in a later step after approval. Do not paste the final plan as a plain reply or ask "should I proceed?" through prose or ask_user_question. If review rejects it, incorporate the feedback and present again. If the review channel is unavailable or aborted, stay in plan mode and ask the user to switch modes manually; do not proceed with implementation.
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+              toolResultPruner: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
+              - id: command-compact
+                name: '@deepseek-ai/dsh-command-compact'
+              - id: tool-result-pruner
+                name: '@deepseek-ai/dsh-compaction-tool-result-pruner'
+                config:
+                  thresholdChars: 8192
+                  headChars: 4096
+                  tailChars: 1024
+          - id: delegation
+            name: cordis:group
+            group: true
+            isolate:
+              workflowEngine: true
+            config:
+              - id: tool-subagent-control
+                name: '@deepseek-ai/dsh-tool-subagent-control'
+              - id: tool-subagent-list-agents
+                name: '@deepseek-ai/dsh-tool-subagent-control/list-agents'
+              - id: tool-subagent
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: spawn
+                  toolName: subagent
+                  modelSelectionSettings: true
+              - id: tool-subagent-fork
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: fork
+                  toolName: subagent_fork
+              - id: workflow-ptc
+                name: '@deepseek-ai/dsh-workflow-ptc'
+                config:
+                  provider: spawn
+              - id: tool-workflow
+                name: '@deepseek-ai/dsh-tool-workflow'
+          - id: tool-ask-user
+            name: '@deepseek-ai/dsh-tool-ask-user'
+          - id: tool-todo
+            name: '@deepseek-ai/dsh-tool-todo'
+            config:
+              allowParallelInProgress: true
+          - id: tool-web
+            name: '@deepseek-ai/dsh-tool-web'
+            config:
+              fetch: true
+              searchTimeoutMs: 60000
+          - id: present
+            name: '@deepseek-ai/dsh-tool-present'
+          - id: tool-plugin-manager
+            name: '@deepseek-ai/dsh-plugin-manager/tools'
+            disabled: true
+          - id: tool-plugin-market
+            name: '@deepseek-ai/dsh-plugin-market/tools'
+            disabled: true

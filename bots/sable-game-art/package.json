@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-sable-game-art",
+  "version": "0.1.0",
+  "description": "Turns a game concept into a style guide, palettes, and prompt sheets for your image tool. Slices sprite sheets and checks your art for palette and grid drift.",
+  "author": "Danny Limanseta",
+  "homepage": "https://x.ai/bot/marketplace/bots/sable-game-art",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/sable-game-art"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "design"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

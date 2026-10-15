@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-market-researcher",
+  "version": "0.1.0",
+  "description": "Tracks how competitors market: their ads and creative, landing pages, offers, pricing, channel mix, search overlap, and content cadence, then delivers a weekly brief of what changed with screenshots and marketing counter-moves. Never posts, contacts anyone, signs up for anything, or spends on ads.",
+  "author": "Josh Kim",
+  "homepage": "https://x.ai/bot/marketplace/bots/market-researcher",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/market-researcher"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "marketing"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

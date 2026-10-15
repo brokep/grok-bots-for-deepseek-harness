@@ -1,0 +1,36 @@
+{
+  "name": "dsh-plugin-grok-customer-call-coach",
+  "version": "0.1.0",
+  "description": "Briefs you before customer calls and coaches you after based on your performance.",
+  "author": "Anoop Baliga",
+  "homepage": "https://x.ai/bot/marketplace/bots/customer-call-coach",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/customer-call-coach"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "from grok bot team",
+    "sales"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

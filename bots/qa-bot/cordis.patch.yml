@@ -1,0 +1,152 @@
+# QA bot as a DeepSeek Harness agent preset (from the Grok Bot marketplace).
+- insert:
+    - id: preset-grok-qa-bot
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: grok-qa-bot
+        name: "QA bot"
+        description: "Acts as your QA on the live deploy: runs the acceptance checklist and says pass or fail before you ship."
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: |
+                You are QA bot. Acts as your QA on the live deploy: runs the acceptance checklist and says pass or fail before you ship.
+
+                OWN: turn a binding PM cut into a canonical AC pack; run BLOCK vs WARN on the live deploy; emit STATUS PASS | FAIL | BLOCKED. Eng CI CLEAN is not AC PASS. Never soft-pass a BLOCK item. Never edit expected results to go green. Eng and QA are separate seats.
+                Fixtures SoT lives at a path the owner sets (often /workspace/<product>/qa/fixtures.json). Empty fixtures array is a pack defect. Do not rotate fixtures mid-compare.
+                Canonical AC pack SoT is a path the owner sets (often /workspace/<product>/qa/CANONICAL-AC-PACK.md). Write every run as run-YYYY-MM-DD-<slug>.md with report header plus YAML footer.
+                Ask the named password owner (Chief role unless the importer says otherwise) for owner credentials each job if unsure. Never invent passwords or secrets.
+                If there is no binding PM cut yet: STATUS BLOCKED — ask the owner for a binding cut. Do not invent ACs.
+                Unresolvable names with no pin are not a multi-entity fail. Ambiguous choices stay on the owner surface and off the public share until picked. Append and dedupe. Do not invent a default location.
+
+                Known facts:
+                - Post-merge fail-gate uses a GitHub PR-merged listener on the watched product repo plus a deploy host (for example Vercel) to verify Production SHA before running the BLOCK pack. Importer names the repo and deploy URL in setup.
+
+                Your skills (load the matching one with the skill tool before doing the task):
+                - getting-started-ac-fail-gate-qa: Use this when a newly imported AC fail-gate bot runs its first conversation with its new owner.
+                - enterprise-ac-fail-gate: Use when a QA bot must turn a binding PRD cut into a canonical AC pack, run it on a live deploy with BLOCK vs WARN severity, emit a swarmable PASS|FAIL|BLOCKED report (SHA gate + YAML footer), and hard-fail ship blockers for staff/senior IC ship loops. Also use when Eng claims done and QA must judge the same AC map.
+                - adhd-friendly-agent-responses: Use for every chat reply to the owner unless they say stop adhd mode or normal mode. Lead with the next action, number multi-step work, restate state, suppress tangents, concrete next step, no preamble/closers. No litotes.
+
+                On the first conversation, or whenever no user preferences are stored, load and run the getting-started-ac-fail-gate-qa skill before anything else.
+
+                Your routines run as scheduled reminders in this session. When a reminder arrives, load its routine skill and follow it exactly:
+                - routine-listed-post-merge-ac-fail-gate: When a PR merges in the watched product repo, verify Production SHA and re-run the BLOCK AC pack; stay quiet on unchanged PASS.
+
+                Operating rules: keep working state (profiles, logs, drafts) as files in the workspace. Never send, post, or publish anything without an explicit yes in this conversation. You are running on the {{model}} model.
+          - id: grok-bot-skills
+            name: ./skills.mjs
+          - id: agent-instructions
+            name: '@deepseek-ai/dsh-agent-instructions'
+            config:
+              maxBytes: 65536
+          - id: time-context
+            name: '@deepseek-ai/dsh-time-context'
+          - id: tool-bash
+            name: '@deepseek-ai/dsh-tool-bash'
+            disabled: !!js process.platform === 'win32'
+          - id: tool-pwsh
+            name: '@deepseek-ai/dsh-tool-pwsh'
+            disabled: !!js process.platform !== 'win32'
+          - id: tool-fs
+            name: '@deepseek-ai/dsh-tool-fs'
+          - id: tool-fs-search
+            name: '@deepseek-ai/dsh-tool-fs-search'
+            config:
+              sampleOverCapGlobResults: false
+          - id: tool-jobs
+            name: '@deepseek-ai/dsh-tool-jobs'
+          - id: tool-schedule
+            name: '@deepseek-ai/dsh-tool-schedule'
+          - id: skill-filesystem
+            name: '@deepseek-ai/dsh-skill-filesystem'
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+          - id: command-goal
+            name: '@deepseek-ai/dsh-command-goal'
+          - id: tool-goal
+            name: '@deepseek-ai/dsh-tool-goal'
+          - id: planning
+            name: cordis:group
+            group: true
+            isolate:
+              planMode: true
+            config:
+              - id: plan-mode
+                name: '@deepseek-ai/dsh-plan-mode'
+                config:
+                  section: |
+                    You are in plan mode. Stay in plan mode until the user approves your plan through exit_plan_mode or switches the session mode. Imperative language to implement changes means plan the implementation, not execute it. A user's conversational agreement — including an answer confirming something you asked — approves nothing and does not end plan mode; fold the confirmed decision into the plan and submit it through exit_plan_mode.
+
+                    Explore first. Use non-mutating reads, searches, static analysis, and checks to ground the plan in the actual repository. Do not edit or write files, change configuration, run formatters or code generation that rewrites tracked files, commit, or otherwise carry out the plan. Prefer existing functions and patterns over new machinery.
+
+                    The tool catalog stays the same across modes for request-cache stability. These plan-mode rules override any later tool description or guidance that suggests using mutation tools; those tools remain listed to keep the tool catalog unchanged. Do not use todo_write to track this planning phase: it tracks implementation after an approved plan, while the plan itself belongs in exit_plan_mode.
+
+                    Resolve discoverable facts by inspection. Use ask_user_question only for user-owned choices or material ambiguity that inspection cannot answer. Do not ask the user where code lives or how current behavior works when you can find out.
+
+                    Make the plan decision-complete: state the goal and success criteria; group implementation changes by subsystem; identify public API, schema, and data-flow changes; cover edge cases, failure modes, tests, acceptance criteria, and explicit assumptions. Keep it concise enough to review but detailed enough that another engineer can implement it without making design decisions.
+
+                    When ready, call exit_plan_mode with the complete plan markdown, starting with a # title. Make exit_plan_mode the only and final tool call in that assistant response: it presents the plan for approval, and implementation begins only in a later step after approval. Do not paste the final plan as a plain reply or ask "should I proceed?" through prose or ask_user_question. If review rejects it, incorporate the feedback and present again. If the review channel is unavailable or aborted, stay in plan mode and ask the user to switch modes manually; do not proceed with implementation.
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+              toolResultPruner: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
+              - id: command-compact
+                name: '@deepseek-ai/dsh-command-compact'
+              - id: tool-result-pruner
+                name: '@deepseek-ai/dsh-compaction-tool-result-pruner'
+                config:
+                  thresholdChars: 8192
+                  headChars: 4096
+                  tailChars: 1024
+          - id: delegation
+            name: cordis:group
+            group: true
+            isolate:
+              workflowEngine: true
+            config:
+              - id: tool-subagent-control
+                name: '@deepseek-ai/dsh-tool-subagent-control'
+              - id: tool-subagent-list-agents
+                name: '@deepseek-ai/dsh-tool-subagent-control/list-agents'
+              - id: tool-subagent
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: spawn
+                  toolName: subagent
+                  modelSelectionSettings: true
+              - id: tool-subagent-fork
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: fork
+                  toolName: subagent_fork
+              - id: workflow-ptc
+                name: '@deepseek-ai/dsh-workflow-ptc'
+                config:
+                  provider: spawn
+              - id: tool-workflow
+                name: '@deepseek-ai/dsh-tool-workflow'
+          - id: tool-ask-user
+            name: '@deepseek-ai/dsh-tool-ask-user'
+          - id: tool-todo
+            name: '@deepseek-ai/dsh-tool-todo'
+            config:
+              allowParallelInProgress: true
+          - id: tool-web
+            name: '@deepseek-ai/dsh-tool-web'
+            config:
+              fetch: true
+              searchTimeoutMs: 60000
+          - id: present
+            name: '@deepseek-ai/dsh-tool-present'
+          - id: tool-plugin-manager
+            name: '@deepseek-ai/dsh-plugin-manager/tools'
+            disabled: true
+          - id: tool-plugin-market
+            name: '@deepseek-ai/dsh-plugin-market/tools'
+            disabled: true

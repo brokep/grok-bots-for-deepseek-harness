@@ -1,0 +1,34 @@
+{
+  "name": "dsh-plugin-grok-overheard",
+  "version": "0.1.0",
+  "description": "Watches Reddit, Hacker News, news sites, and X for third-party mentions of your name, brand, and URLs, then sends a short weekday digest when something clears the bar. Stays quiet on dead days and never posts on your behalf.",
+  "author": "Lenny Rachitsky",
+  "homepage": "https://x.ai/bot/marketplace/bots/overheard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/overheard"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

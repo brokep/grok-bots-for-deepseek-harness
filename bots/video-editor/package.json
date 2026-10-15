@@ -1,0 +1,36 @@
+{
+  "name": "dsh-plugin-grok-video-editor",
+  "version": "0.1.0",
+  "description": "Edits short vertical talking-head videos from your raw footage: picks the best takes, captions what you actually said, and adds B-roll, motion graphics, and music. Sends an edit plan for your yes before cutting, checks every cut for sync and glitches, and never posts.",
+  "author": "Ethan Ng",
+  "homepage": "https://x.ai/bot/marketplace/bots/video-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/video-editor"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "from grok bot team",
+    "marketing"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

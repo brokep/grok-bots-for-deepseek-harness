@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-pitch-deck-coach",
+  "version": "0.1.0",
+  "description": "Reviews a pitch deck and reports what an investor is likely to understand, believe, question, and remember, then helps strengthen the story, evidence, and slides.",
+  "author": "Hiten Shah",
+  "homepage": "https://x.ai/bot/marketplace/bots/pitch-deck-coach",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/pitch-deck-coach"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "sales"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

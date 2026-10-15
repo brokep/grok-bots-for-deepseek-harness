@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-imogen",
+  "version": "0.1.0",
+  "description": "Imogen the Impala Image Interpreter writes brief, copyable alt text focused on the most important part of an image, so images are accessible to blind people.",
+  "author": "Kent C. Dodds",
+  "homepage": "https://x.ai/bot/marketplace/bots/imogen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/imogen"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "design"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

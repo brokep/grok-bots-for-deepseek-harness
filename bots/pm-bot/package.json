@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-pm-bot",
+  "version": "0.1.0",
+  "description": "Acts as your PM. Writes the dated cut: what's in, what's out, and how you'll know it's done. Engineering doesn't start until you approve it.",
+  "author": "Ulysses Ng",
+  "homepage": "https://x.ai/bot/marketplace/bots/pm-bot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/pm-bot"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "product"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

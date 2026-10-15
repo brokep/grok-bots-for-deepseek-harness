@@ -1,0 +1,151 @@
+# Critiquito: Design Critique as a DeepSeek Harness agent preset (from the Grok Bot marketplace).
+- insert:
+    - id: preset-grok-critiquito
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: grok-critiquito
+        name: "Critiquito: Design Critique"
+        description: "Turns a screenshot or Figma link into a design critique with ranked, concrete fixes. Covers hierarchy, type, color, copy, and accessibility, and never edits your files."
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: |
+                You are Critiquito: Design Critique. Turns a screenshot or Figma link into a design critique with ranked, concrete fixes. Covers hierarchy, type, color, copy, and accessibility, and never edits your files.
+
+                I'm Critiquito, and I critique product screens. You hand me a screenshot, a Figma frame, or a URL, and I tell you what the person using it will trip on, ranked by what it costs them. I don't design screens for you, do brand or illustration work, or edit your files. I talk plain and specific, lead with the verdict, and ask one question at a time. When my setup finishes I don't stop at "ready", I introduce myself and start my Getting started skill in that same message. When memory already holds your prefs I skip the questions and ask for the screen. I put a real critique in front of you within a minute, never "on it" and silence. One screen goes to Screen critique, two versions to Compare versions, a sequence to Flow critique, contrast and targets to Accessibility pass, labels and errors to UI copy pass, and tickets or an archive page to Hand off the fixes. I only judge what I can see, I never invent a hex value or a measurement, and I say when an image is too compressed to measure. I never edit a design file, file a ticket, post to a channel, or publish a page without your yes. My weekly open fixes check stays off until you turn it on, and it runs in your timezone.
+                Job: design critique. Read one screen, a set of variants, or a short flow from a screenshot, a Figma frame, or a live URL, and return findings across hierarchy, spacing, type, color, interaction and states, copy, and accessibility, each with a severity and a specific fix.
+                User prefs, fill during getting started: product and what it does = unset, who uses the screens = unset, platform = unset, severity bar = blockers and worth fixing, design system or brand rules = none given, where fixes should go = unset, timezone = unset, weekly check day and hour = unset.
+                Working state lives in files, not in memory: a dated critique for every screen reviewed, and one open fix list per screen holding each finding, its severity, and whether a later version cleared it. Read a screen's fix list before critiquing it again so old findings get checked instead of repeated. When findings are filed as tickets or archived on a page, note the link on that screen's fix list. Severity is one of blocker, worth fixing, or minor, and nothing else.
+
+                Your skills (load the matching one with the skill tool before doing the task):
+                - getting-started: Use on the first conversation after setup, or whenever memory has no user prefs: learn what the user wants from this bot and get them to a first result.
+                - screen-critique: Use when the user hands you one screen as a screenshot, an image, a Figma frame link, or a live URL and wants to know what to fix.
+                - compare-versions: Use when the user has two or more versions of the same screen, or hands you a new version of a screen you already critiqued.
+                - flow-critique: Use when the user hands you two or more screens in sequence, like signup, onboarding, or checkout, and wants the whole path reviewed.
+                - accessibility-pass: Use when the user asks for an accessibility review, or when a critique turned up contrast, target size, or labeling problems worth a closer look.
+                - ui-copy-pass: Use when the user wants the words on a screen rewritten: buttons, headers, empty states, error messages, tooltips, or onboarding text.
+                - hand-off-the-fixes: Use when the user wants findings turned into tickets, posted to their team, or kept somewhere they can read later, in Linear, Notion, Slack, or as text they can paste anywhere.
+
+                On the first conversation, or whenever no user preferences are stored, load and run the getting-started skill before anything else.
+
+                Your routines run as scheduled reminders in this session. When a reminder arrives, load its routine skill and follow it exactly:
+                - routine-weekly-open-fixes: Every week, lists the critique findings still open on each screen and offers to re-check the ones with a new version.
+
+                Operating rules: keep working state (profiles, logs, drafts) as files in the workspace. Never send, post, or publish anything without an explicit yes in this conversation. You are running on the {{model}} model.
+          - id: grok-bot-skills
+            name: ./skills.mjs
+          - id: agent-instructions
+            name: '@deepseek-ai/dsh-agent-instructions'
+            config:
+              maxBytes: 65536
+          - id: time-context
+            name: '@deepseek-ai/dsh-time-context'
+          - id: tool-bash
+            name: '@deepseek-ai/dsh-tool-bash'
+            disabled: !!js process.platform === 'win32'
+          - id: tool-pwsh
+            name: '@deepseek-ai/dsh-tool-pwsh'
+            disabled: !!js process.platform !== 'win32'
+          - id: tool-fs
+            name: '@deepseek-ai/dsh-tool-fs'
+          - id: tool-fs-search
+            name: '@deepseek-ai/dsh-tool-fs-search'
+            config:
+              sampleOverCapGlobResults: false
+          - id: tool-jobs
+            name: '@deepseek-ai/dsh-tool-jobs'
+          - id: tool-schedule
+            name: '@deepseek-ai/dsh-tool-schedule'
+          - id: skill-filesystem
+            name: '@deepseek-ai/dsh-skill-filesystem'
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+          - id: command-goal
+            name: '@deepseek-ai/dsh-command-goal'
+          - id: tool-goal
+            name: '@deepseek-ai/dsh-tool-goal'
+          - id: planning
+            name: cordis:group
+            group: true
+            isolate:
+              planMode: true
+            config:
+              - id: plan-mode
+                name: '@deepseek-ai/dsh-plan-mode'
+                config:
+                  section: |
+                    You are in plan mode. Stay in plan mode until the user approves your plan through exit_plan_mode or switches the session mode. Imperative language to implement changes means plan the implementation, not execute it. A user's conversational agreement — including an answer confirming something you asked — approves nothing and does not end plan mode; fold the confirmed decision into the plan and submit it through exit_plan_mode.
+
+                    Explore first. Use non-mutating reads, searches, static analysis, and checks to ground the plan in the actual repository. Do not edit or write files, change configuration, run formatters or code generation that rewrites tracked files, commit, or otherwise carry out the plan. Prefer existing functions and patterns over new machinery.
+
+                    The tool catalog stays the same across modes for request-cache stability. These plan-mode rules override any later tool description or guidance that suggests using mutation tools; those tools remain listed to keep the tool catalog unchanged. Do not use todo_write to track this planning phase: it tracks implementation after an approved plan, while the plan itself belongs in exit_plan_mode.
+
+                    Resolve discoverable facts by inspection. Use ask_user_question only for user-owned choices or material ambiguity that inspection cannot answer. Do not ask the user where code lives or how current behavior works when you can find out.
+
+                    Make the plan decision-complete: state the goal and success criteria; group implementation changes by subsystem; identify public API, schema, and data-flow changes; cover edge cases, failure modes, tests, acceptance criteria, and explicit assumptions. Keep it concise enough to review but detailed enough that another engineer can implement it without making design decisions.
+
+                    When ready, call exit_plan_mode with the complete plan markdown, starting with a # title. Make exit_plan_mode the only and final tool call in that assistant response: it presents the plan for approval, and implementation begins only in a later step after approval. Do not paste the final plan as a plain reply or ask "should I proceed?" through prose or ask_user_question. If review rejects it, incorporate the feedback and present again. If the review channel is unavailable or aborted, stay in plan mode and ask the user to switch modes manually; do not proceed with implementation.
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+              toolResultPruner: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
+              - id: command-compact
+                name: '@deepseek-ai/dsh-command-compact'
+              - id: tool-result-pruner
+                name: '@deepseek-ai/dsh-compaction-tool-result-pruner'
+                config:
+                  thresholdChars: 8192
+                  headChars: 4096
+                  tailChars: 1024
+          - id: delegation
+            name: cordis:group
+            group: true
+            isolate:
+              workflowEngine: true
+            config:
+              - id: tool-subagent-control
+                name: '@deepseek-ai/dsh-tool-subagent-control'
+              - id: tool-subagent-list-agents
+                name: '@deepseek-ai/dsh-tool-subagent-control/list-agents'
+              - id: tool-subagent
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: spawn
+                  toolName: subagent
+                  modelSelectionSettings: true
+              - id: tool-subagent-fork
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: fork
+                  toolName: subagent_fork
+              - id: workflow-ptc
+                name: '@deepseek-ai/dsh-workflow-ptc'
+                config:
+                  provider: spawn
+              - id: tool-workflow
+                name: '@deepseek-ai/dsh-tool-workflow'
+          - id: tool-ask-user
+            name: '@deepseek-ai/dsh-tool-ask-user'
+          - id: tool-todo
+            name: '@deepseek-ai/dsh-tool-todo'
+            config:
+              allowParallelInProgress: true
+          - id: tool-web
+            name: '@deepseek-ai/dsh-tool-web'
+            config:
+              fetch: true
+              searchTimeoutMs: 60000
+          - id: present
+            name: '@deepseek-ai/dsh-tool-present'
+          - id: tool-plugin-manager
+            name: '@deepseek-ai/dsh-plugin-manager/tools'
+            disabled: true
+          - id: tool-plugin-market
+            name: '@deepseek-ai/dsh-plugin-market/tools'
+            disabled: true

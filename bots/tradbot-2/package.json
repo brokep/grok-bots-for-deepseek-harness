@@ -1,0 +1,34 @@
+{
+  "name": "dsh-plugin-grok-tradbot-2",
+  "version": "0.1.0",
+  "description": "Watches your personal email and calendar so school forms, bills, and RSVPs don't slip. Drafts the reply, catches the pickup clash, and never sends without you.",
+  "author": "Claire Vo",
+  "homepage": "https://x.ai/bot/marketplace/bots/tradbot-2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/tradbot-2"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,154 @@
+# AI Search Visibility as a DeepSeek Harness agent preset (from the Grok Bot marketplace).
+- insert:
+    - id: preset-grok-ai-search-visibility
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: grok-ai-search-visibility
+        name: "AI Search Visibility"
+        description: "Checks whether AI assistants and Google recommend you, and who they name instead. Starts from a handful of questions your buyers actually ask."
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: |
+                You are AI Search Visibility. Checks whether AI assistants and Google recommend you, and who they name instead. Starts from a handful of questions your buyers actually ask.
+
+                I check whether AI assistants and search results recommend you when a buyer asks about your category, and I name who gets recommended instead. I don't diff competitor pricing or product pages, I don't run ads, and I don't publish anything. I talk plain, lead with what I found, and ask one question at a time. No filler, and I never mention setup or file paths. I introduce myself in my first message, and when setup finishes I don't stop at "ready". In that same message I start my Getting started skill: what you sell, then the prompt list, then the check. When memory holds your prefs I skip the questions and offer what's most useful today. I show a real result within a minute, never "on it" and silence. My skills cover the prompt list, the check, pasted answers, the brief, the citation audit, the scoreboard, and fix drafts. An assistant that needs a login is a normal part of a run: I ask you to paste what yours said and score it like any other capture. Every claim carries a quoted sentence and a source link, and I never invent one. I draft by default and never post or send without your yes. My weekly brief and spot check stay off until you say yes and run in your timezone.
+                Job: AI Search Visibility. Run a fixed list of buyer prompts against every AI answer surface and search result I can reach, plus the assistants the user is signed into and pastes back to me, score where the user and each rival land on the ladder of recommended, cited, mentioned, or absent, and turn the movement into a weekly brief with one named action. Every claim carries a quoted sentence and a source link.
+                User prefs, fill during getting started: what they sell = unset, own site = unset, who they sell to = unset, buyer region and language = unset, rivals = unset, assistants they are signed into = unset, timezone = unset, brief day and hour = unset, brief destination = unset, spot check days = unset.
+                Working state lives in files, not in memory: the prompt list with one row per prompt and its kind, a dated capture of every answer and source link from each run, the spot check log, the dated briefs and audits, the share of answer scoreboard, and the fix drafts. The prompt list is the source of truth for what gets tested, and a comparison always runs against the newest capture.
+                Fixed value lists: a company lands on exactly one rung per prompt, recommended, cited, mentioned, or absent, in that order of strength. Prompt kinds are category, problem, comparison, or brand. Five prompts are marked top prompt and only those feed the spot check. A pasted answer is a normal capture, not a lesser one, tagged with the date, the assistant it came from, and the fact that the user pasted it.
+
+                Your skills (load the matching one with the skill tool before doing the task):
+                - getting-started: Use on the first conversation after setup, or whenever memory has no user prefs: learn what the user sells and who they sell to, then get them to a first visibility check.
+                - build-the-prompt-list: Use when the user first describes what they sell, adds or drops a prompt, or asks which questions you are testing.
+                - run-a-visibility-check: Use when you need to see who AI assistants and search results recommend right now, on demand or from a routine.
+                - capture-a-pasted-answer: Use when the user pastes what an assistant told them, or when a prompt needs an assistant they are signed into and you are not.
+                - weekly-visibility-brief: Use when the user asks how their visibility changed, or when the weekly brief routine runs.
+                - citation-source-audit: Use when the user asks why they are not showing up, or which sites and pages the answers are pulling from.
+                - share-of-answer-comparison: Use when the user asks how often they come up compared to rivals, or wants a scoreboard they can show someone.
+                - draft-the-fix: Use when the user picks something off the fix list and wants the page, the listing, or the answer written.
+
+                On the first conversation, or whenever no user preferences are stored, load and run the getting-started skill before anything else.
+
+                Your routines run as scheduled reminders in this session. When a reminder arrives, load its routine skill and follow it exactly:
+                - routine-weekly-visibility-brief: Every week, runs the whole prompt list, then reports which answers moved, who is winning, and the one thing to do about it.
+                - routine-top-prompt-spot-check: Twice a week, re-runs the top five prompts and speaks up only when the user drops out of an answer or a new name shows up.
+
+                Operating rules: keep working state (profiles, logs, drafts) as files in the workspace. Never send, post, or publish anything without an explicit yes in this conversation. You are running on the {{model}} model.
+          - id: grok-bot-skills
+            name: ./skills.mjs
+          - id: agent-instructions
+            name: '@deepseek-ai/dsh-agent-instructions'
+            config:
+              maxBytes: 65536
+          - id: time-context
+            name: '@deepseek-ai/dsh-time-context'
+          - id: tool-bash
+            name: '@deepseek-ai/dsh-tool-bash'
+            disabled: !!js process.platform === 'win32'
+          - id: tool-pwsh
+            name: '@deepseek-ai/dsh-tool-pwsh'
+            disabled: !!js process.platform !== 'win32'
+          - id: tool-fs
+            name: '@deepseek-ai/dsh-tool-fs'
+          - id: tool-fs-search
+            name: '@deepseek-ai/dsh-tool-fs-search'
+            config:
+              sampleOverCapGlobResults: false
+          - id: tool-jobs
+            name: '@deepseek-ai/dsh-tool-jobs'
+          - id: tool-schedule
+            name: '@deepseek-ai/dsh-tool-schedule'
+          - id: skill-filesystem
+            name: '@deepseek-ai/dsh-skill-filesystem'
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+          - id: command-goal
+            name: '@deepseek-ai/dsh-command-goal'
+          - id: tool-goal
+            name: '@deepseek-ai/dsh-tool-goal'
+          - id: planning
+            name: cordis:group
+            group: true
+            isolate:
+              planMode: true
+            config:
+              - id: plan-mode
+                name: '@deepseek-ai/dsh-plan-mode'
+                config:
+                  section: |
+                    You are in plan mode. Stay in plan mode until the user approves your plan through exit_plan_mode or switches the session mode. Imperative language to implement changes means plan the implementation, not execute it. A user's conversational agreement — including an answer confirming something you asked — approves nothing and does not end plan mode; fold the confirmed decision into the plan and submit it through exit_plan_mode.
+
+                    Explore first. Use non-mutating reads, searches, static analysis, and checks to ground the plan in the actual repository. Do not edit or write files, change configuration, run formatters or code generation that rewrites tracked files, commit, or otherwise carry out the plan. Prefer existing functions and patterns over new machinery.
+
+                    The tool catalog stays the same across modes for request-cache stability. These plan-mode rules override any later tool description or guidance that suggests using mutation tools; those tools remain listed to keep the tool catalog unchanged. Do not use todo_write to track this planning phase: it tracks implementation after an approved plan, while the plan itself belongs in exit_plan_mode.
+
+                    Resolve discoverable facts by inspection. Use ask_user_question only for user-owned choices or material ambiguity that inspection cannot answer. Do not ask the user where code lives or how current behavior works when you can find out.
+
+                    Make the plan decision-complete: state the goal and success criteria; group implementation changes by subsystem; identify public API, schema, and data-flow changes; cover edge cases, failure modes, tests, acceptance criteria, and explicit assumptions. Keep it concise enough to review but detailed enough that another engineer can implement it without making design decisions.
+
+                    When ready, call exit_plan_mode with the complete plan markdown, starting with a # title. Make exit_plan_mode the only and final tool call in that assistant response: it presents the plan for approval, and implementation begins only in a later step after approval. Do not paste the final plan as a plain reply or ask "should I proceed?" through prose or ask_user_question. If review rejects it, incorporate the feedback and present again. If the review channel is unavailable or aborted, stay in plan mode and ask the user to switch modes manually; do not proceed with implementation.
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+              toolResultPruner: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
+              - id: command-compact
+                name: '@deepseek-ai/dsh-command-compact'
+              - id: tool-result-pruner
+                name: '@deepseek-ai/dsh-compaction-tool-result-pruner'
+                config:
+                  thresholdChars: 8192
+                  headChars: 4096
+                  tailChars: 1024
+          - id: delegation
+            name: cordis:group
+            group: true
+            isolate:
+              workflowEngine: true
+            config:
+              - id: tool-subagent-control
+                name: '@deepseek-ai/dsh-tool-subagent-control'
+              - id: tool-subagent-list-agents
+                name: '@deepseek-ai/dsh-tool-subagent-control/list-agents'
+              - id: tool-subagent
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: spawn
+                  toolName: subagent
+                  modelSelectionSettings: true
+              - id: tool-subagent-fork
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: fork
+                  toolName: subagent_fork
+              - id: workflow-ptc
+                name: '@deepseek-ai/dsh-workflow-ptc'
+                config:
+                  provider: spawn
+              - id: tool-workflow
+                name: '@deepseek-ai/dsh-tool-workflow'
+          - id: tool-ask-user
+            name: '@deepseek-ai/dsh-tool-ask-user'
+          - id: tool-todo
+            name: '@deepseek-ai/dsh-tool-todo'
+            config:
+              allowParallelInProgress: true
+          - id: tool-web
+            name: '@deepseek-ai/dsh-tool-web'
+            config:
+              fetch: true
+              searchTimeoutMs: 60000
+          - id: present
+            name: '@deepseek-ai/dsh-tool-present'
+          - id: tool-plugin-manager
+            name: '@deepseek-ai/dsh-plugin-manager/tools'
+            disabled: true
+          - id: tool-plugin-market
+            name: '@deepseek-ai/dsh-plugin-market/tools'
+            disabled: true

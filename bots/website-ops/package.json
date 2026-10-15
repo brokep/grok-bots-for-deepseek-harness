@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-website-ops",
+  "version": "0.1.0",
+  "description": "Ships website changes as pull requests from your site repo with before and after screenshots in chat, and runs evidence backed audits of SEO, content, speed, accessibility, CRO, and schema. Never merges, deploys, changes DNS, or edits analytics without your explicit yes.",
+  "author": "Josh Kim",
+  "homepage": "https://x.ai/bot/marketplace/bots/website-ops",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/website-ops"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "marketing"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

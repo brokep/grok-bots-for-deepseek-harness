@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-alfred",
+  "version": "0.1.0",
+  "description": "Designs, audits, and governs your Grok Bot organization so it matches real company outcomes, with clear human owners and no duplicate jobs. Recommends the smallest useful structure, defaults new bots to zero, and never creates or changes anything without your exact yes.",
+  "author": "Robin Delta",
+  "homepage": "https://x.ai/bot/marketplace/bots/alfred",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/alfred"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "operations"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

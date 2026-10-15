@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-grok-product-marketer",
+  "version": "0.1.0",
+  "description": "Learns your product, brand, and market, turns competitive research into positioning principles every message is measured against, and drafts landing page, ads, and email copy that holds to them. Drafts only, and never publishes, sends, or spends.",
+  "author": "Josh Kim",
+  "homepage": "https://x.ai/bot/marketplace/bots/product-marketer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brokep/grok-bots-for-deepseek-harness",
+    "directory": "bots/product-marketer"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "grok-bot",
+    "marketing"
+  ],
+  "license": "SEE README",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "skills.mjs",
+    "skills",
+    "README.md",
+    "setup-prompt.md"
+  ],
+  "engines": {
+    "dsh": "*"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
